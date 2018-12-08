@@ -18,6 +18,7 @@ public class Calculadora {
 				System.out.println("1. Suma ");
 				System.out.println("2. Resta ");
 				System.out.println("3. División ");
+				System.out.println("4. Multiplicación ");
 				opc = teclado.nextByte();
 				
 		    //comprueba que la opción escogida sea válida
