@@ -21,12 +21,13 @@ public class Calculadora {
 				opc = teclado.nextByte();
 				
 		    //comprueba que la opción escogida sea válida
-				while ((opc>3)||(opc<1)){
+				while ((opc>4)||(opc<1)){
 					System.out.println("Opción no permitida. Introduzca una opción válida ");
 					System.out.println("Elija la operación: ");
 					System.out.println("1. Suma ");
 					System.out.println("2. Resta ");
 					System.out.println("3. División ");
+					System.out.println("4. Multiplicación ");
 					opc = teclado.nextByte();
 				}
 			//pide introducir los números por teclado
@@ -50,6 +51,10 @@ public class Calculadora {
 	    			}
 	    			resultado=numero1/numero2;
 					System.out.print("La división es: "+ resultado);
+					break;
+				case 4:
+	    			resultado=numero1*numero2;
+					System.out.print("La multiplicación es: "+ resultado);
 					break;
                     }
 				teclado.close();
